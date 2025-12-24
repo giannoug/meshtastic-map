@@ -1893,6 +1893,11 @@
                 return "2";
             },
             shouldShowAnnouncement: function() {
+                const isAnnouncementEnabled = false;
+                if(!isAnnouncementEnabled){
+                    return false;
+                }
+
                 const lastSeenAnnouncementId = window.localStorage.getItem("last-seen-announcement-id");
                 return lastSeenAnnouncementId?.toString() !== this.getAnnouncementId();
             },
