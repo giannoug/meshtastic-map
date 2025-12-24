@@ -2723,10 +2723,10 @@
     var selectedNodeOutlineCircle = null;
     var waypoints = [];
 
-    // set map bounds to be a little more than full size to prevent panning off screen
+    // set map bounds to the full world
     var bounds = [
-        [-100, 70], // top left
-        [100, 500], // bottom right
+        [-90, -180], // top left
+        [90, 180], // bottom right
     ];
 
     // create map positioned over Greece
